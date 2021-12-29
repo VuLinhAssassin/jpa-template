@@ -1,6 +1,5 @@
 package com.vulinh.template;
 
-import lombok.Builder;
 import lombok.Getter;
 import lombok.Setter;
 import lombok.ToString;
@@ -18,7 +17,6 @@ import java.time.LocalDateTime;
 @EntityListeners(AuditingEntityListener.class)
 @Getter
 @Setter
-@Builder
 @ToString
 public abstract class AbstractEntity implements Serializable {
 
@@ -38,5 +36,5 @@ public abstract class AbstractEntity implements Serializable {
     protected void markAsRemoved() {
         isDeleted = true;
     }
-    
+
 }
