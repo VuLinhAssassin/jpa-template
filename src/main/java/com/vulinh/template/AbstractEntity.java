@@ -24,14 +24,14 @@ public abstract class AbstractEntity implements Serializable {
 
     @CreatedDate
     @Column(name = "created_date")
-    private LocalDateTime createdDate;
+    protected LocalDateTime createdDate;
 
     @LastModifiedDate
     @Column(name = "updated_date")
-    private LocalDateTime updatedDate;
+    protected LocalDateTime updatedDate;
 
     @Column(name = "is_deleted")
-    private boolean isDeleted;
+    protected boolean isDeleted;
 
     protected void markAsRemoved() {
         isDeleted = true;

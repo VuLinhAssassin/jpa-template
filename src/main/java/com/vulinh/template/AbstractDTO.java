@@ -18,10 +18,10 @@ public abstract class AbstractDTO implements Serializable {
 
     private static final long serialVersionUID = -6123040993496246510L;
 
-    private LocalDateTime createdDate;
-    private LocalDateTime updatedDate;
+    protected LocalDateTime createdDate;
+    protected LocalDateTime updatedDate;
 
     @JsonIgnore
-    private boolean isDeleted;
+    protected boolean isDeleted;
 
 }
